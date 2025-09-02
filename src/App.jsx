@@ -16,10 +16,12 @@ function App() {
 
 	return (
 		<>
-			<header className="bg-darkblue py-2">
-				<h1>Wonderful cast</h1>
+			<header className="bg-darkblue py-2 mb-3 text-light">
+				<h1 className="text-center">Wonderful cast</h1>
 			</header>
 			<main>
+				<h2 className="text-center">Actresses</h2>
+				<p className="text-center">List of actresses fetched from an API</p>
 				<div className="container">
 					<div className="row">
 						{actresses.map((actress) => {
@@ -33,8 +35,8 @@ function App() {
 								awards,
 							} = actress;
 							return (
-								<div className="col-6 col-md-4">
-									<div key={id} className="card">
+								<div className="col-12 col-md-6 col-lg-4 my-2">
+									<div key={id} className="card text-light bg-darkblue">
 										<img src={image} className="card-img-top p-3" alt="..." />
 										<div className="card-body">
 											<p className="card-text">{name}</p>
