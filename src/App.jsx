@@ -23,7 +23,7 @@ function App() {
 				<h2 className="text-center">Actresses</h2>
 				<p className="text-center">List of actresses fetched from an API</p>
 				<div className="container">
-					<div className="row">
+					<div className="row align-items-stretch">
 						{actresses.map((actress) => {
 							const {
 								id,
@@ -36,10 +36,10 @@ function App() {
 							} = actress;
 							return (
 								<div className="col-12 col-md-6 col-lg-4 my-2">
-									<div key={id} className="card text-light bg-darkblue">
-										<img src={image} className="card-img-top p-3" alt="..." />
+									<div key={id} className="card text-light bg-darkblue h-100">
 										<div className="card-body">
-											<p className="card-text">{name}</p>
+											<h3 className="card-text">{name}</h3>
+											<img src={image} className="card-img-top p-2" alt="..." />
 											<p className="card-text">{birth_year}</p>
 											<p className="card-text">{nationality}</p>
 											<p className="card-text">{biography}</p>
