@@ -20,15 +20,24 @@ function App() {
 				<div className="row">
 					<div className="col-6 col-md-4">
 						{actresses.map((actress) => {
+							const {
+								id,
+								image,
+								name,
+								birth_year,
+								nationality,
+								biography,
+								awards,
+							} = actress;
 							return (
-								<div key={actress.id} className="card">
-									<img src={actress.image} className="card-img-top" alt="..." />
+								<div key={id} className="card">
+									<img src={image} className="card-img-top" alt="..." />
 									<div className="card-body">
-										<p className="card-text">{actress.name}</p>
-										<p className="card-text">{actress.birth_year}</p>
-										<p className="card-text">{actress.nationality}</p>
-										<p className="card-text">{actress.biography}</p>
-										<p className="card-text">{actress.awards}</p>
+										<p className="card-text">{name}</p>
+										<p className="card-text">{birth_year}</p>
+										<p className="card-text">{nationality}</p>
+										<p className="card-text">{biography}</p>
+										<p className="card-text">{awards}</p>
 									</div>
 								</div>
 							);
