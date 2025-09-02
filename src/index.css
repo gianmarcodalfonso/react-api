@@ -7,6 +7,6 @@ h1 {
 	font-weight: 400;
 }
 
-.card-body > * {
+.card-body * {
 	text-align: center;
 }

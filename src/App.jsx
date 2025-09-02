@@ -40,10 +40,17 @@ function App() {
 										<div className="card-body">
 											<h3 className="card-text">{name}</h3>
 											<img src={image} className="card-img-top p-2" alt="..." />
-											<p className="card-text">{birth_year}</p>
-											<p className="card-text">{nationality}</p>
+											<p className="card-text">
+												{birth_year}
+												<span className="card-text"> {nationality} </span>
+											</p>
 											<p className="card-text">{biography}</p>
-											<p className="card-text">{awards}</p>
+											<div>
+												<p className="fw-bolder text-warning mb-0 fst-italic">
+													Awards:
+												</p>
+												<p className="text-warning mt-0">{awards}</p>
+											</div>
 										</div>
 									</div>
 								</div>
